@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/draweeBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_gradient_3"/>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.SignupActivity">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/draweeProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/background_corner_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/draweeProfile"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="13sp"
+                        android:paddingTop="5dp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="Nombre" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="13sp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="Email" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="13sp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="Password" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="13sp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="Teléfono" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_zipcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="13sp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="Código Postal" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="13sp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="País" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/input_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textSize="13sp"
+                        android:translationY="2dp"
+                        android:background="@drawable/background_rounded_white"
+                        android:hint="No. de Cuenta" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/background_pink"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="Registrarme"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1060726878504",
+    "firebase_url": "https://expetience.firebaseio.com",
+    "project_id": "expetience",
+    "storage_bucket": "expetience.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060726878504:android:6330b3300c08d0e8",
+        "android_client_info": {
+          "package_name": "com.hackmty.experience"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060726878504-vctc2k1l3gf123n1roptfo9uh735s9gs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackmty.experience",
+            "certificate_hash": "D68EB48566F213E022E1A2F3B65B4C3872731F43"
+          }
+        },
+        {
+          "client_id": "1060726878504-6i7bmqm7ue1b959kev7cmcobobrsbr0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh1lZ4Sp4gecyK4cQ4Mq3q1dimBqjQ5Ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060726878504-6i7bmqm7ue1b959kev7cmcobobrsbr0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

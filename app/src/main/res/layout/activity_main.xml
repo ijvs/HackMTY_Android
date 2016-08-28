@@ -4,14 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.hackmty.experience.MainActivity">
+    tools:context=".ui.MainActivity">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/draweeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_gradient_2"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/background_pink"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text=""/>
+
 </RelativeLayout>
