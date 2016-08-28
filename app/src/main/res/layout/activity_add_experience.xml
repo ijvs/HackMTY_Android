@@ -1,8 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#aaa"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context="com.hackmty.experience.ui.AddExperienceActivity">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/experience_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/panorama"
+            android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            />
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/drawee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Añade una foto de tu experiencia"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:translationY="2dp"
+            android:background="@drawable/background_rounded_white"
+            android:hint="Nombre" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/input_cost"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:translationY="2dp"
+            android:inputType="number"
+            android:background="@drawable/background_rounded_white"
+            android:hint="Costo" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:textSize="13sp"
+            android:translationY="2dp"
+            android:padding="10dp"
+            android:background="@drawable/background_rounded_white"
+            android:hint="Descripción" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_pink"
+        android:textColor="@color/white"
+        android:text="Añadir"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

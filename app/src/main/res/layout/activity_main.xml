@@ -17,14 +17,29 @@
         android:background="@drawable/black_gradient_2"/>
 
     <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/background_pink"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_above="@+id/signup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Iniciar Sesión"/>
+
+    <Button
         android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@drawable/background_pink"
         android:layout_alignParentBottom="true"
-        android:layout_margin="30dp"
         android:textColor="@color/white"
         android:textAllCaps="false"
-        android:text=""/>
+        android:layout_margin="20dp"
+        android:text="Registrarse"/>
 
 </RelativeLayout>

@@ -4,17 +4,20 @@ public class Experience {
 
     public String name;
     public String description;
-    double cost;
-    public String place_id;
-    public double lat;
-    public double lon;
+    public double cost;
+    public int image;
+    public String filePath;
 
-    public Experience(String name, String description, double cost, String place_id, double lat, double lon) {
+    public Experience(String name, String description, double cost, int image) {
         this.name = name;
         this.description = description;
         this.cost = cost;
-        this.place_id = place_id;
-        this.lat = lat;
-        this.lon = lon;
+        this.image = image;
+    }
+    public Experience(String name, String description, double cost, String filePath) {
+        this.name = name;
+        this.description = description;
+        this.cost = cost;
+        this.filePath = filePath;
     }
 }
